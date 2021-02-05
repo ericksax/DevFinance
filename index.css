@@ -1,0 +1,240 @@
+:root {
+    --dark-blue: #363f5f;
+    --deep-blue:  rgb(3, 77, 146);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    background: #f0f2f5;
+}
+
+#logo {
+    font-weight: bolder;
+}
+
+header {
+    text-align: center;
+    padding: 4rem 8rem 8rem 8rem ;
+    background: rgb(3, 77, 146);
+    color: white;
+    
+}
+
+h1 p {
+    display: inline-block;
+    color:rgb(0, 162, 255);
+    opacity: 1;
+    font-weight: bolder;
+}
+
+h2 {
+    margin-top: 2rem;
+    margin-bottom: 0.8rem;
+    color: var(--dark-blue);
+    font-weight: normal;
+}
+
+#operations {
+    text-decoration: none;
+    color: var(--deep-blue);
+    font-weight: bolder;
+}
+
+#balance h2 {
+    color: #fff;
+    margin-top: 0;
+}
+
+#balance {
+   
+    margin-top: -7rem; 
+}
+
+#container {
+    width: min(90vw, 800px);
+    margin: auto;
+}
+
+.card {
+   
+    padding: 1.5rem 2rem;
+    margin-bottom: 1.5rem;
+    background: #fff;
+    border-radius: 0.25rem;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+
+}
+
+.card h3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+.card p {
+   font-size: 2rem;
+   line-height: 3rem; 
+   
+   margin-top: 1rem;
+}
+
+.card.total {
+    background: #6baff0;
+    color: #fff;
+}
+
+#data-table {
+    width: 100%;
+    border-spacing: 0 0.5rem;
+    color: #969cb3;
+}
+table {
+    border-radius: 0.4rem;
+}
+
+table td {
+    
+    background: white;
+}
+
+table tbody tr {
+    opacity: 0.7;
+   
+    
+}
+
+table tr:hover {
+    opacity: 1;
+}
+
+table th {
+    background: white;
+    font-weight: normal;
+    padding: 1rem 2rem;
+    text-align: left;
+    
+}
+
+table td {
+    background: white;
+    padding: 1rem 2rem; 
+    
+}
+
+
+td.description {
+    color: var(--dark-blue)
+}
+
+td.income {
+    color: #12a454
+}
+
+td.expense{
+    color: #e92929 ;
+}
+
+
+footer {
+    text-align: center; 
+    padding: 4rem 0 2rem;
+    color: var(--dark-blue);
+    opacity: 0.6;
+
+}
+
+.hidden {
+    display: none;
+}
+
+
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+    width: 100vw;
+    height: 100vh; 
+}
+
+#containerImput {
+    width: min(450px, 90%);
+    height: 270px;
+    background: #f0f2f5;
+    padding: 30px;
+}
+#containerImput h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: var(--dark-blue);
+}
+#containerImput p {
+    margin-top: 0;
+    margin-bottom: 0;
+    
+    font-size: 0.7rem;
+    color: var(--dark-blue);
+}
+
+#imputData input {
+
+    width: 100%;
+    padding: 5px;
+    margin-top: 7px;
+    border: none;
+}
+
+#btns{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 7px;
+    
+}
+
+#cancelData {
+    padding: 10px;
+    width: 190px;
+    border: 2px solid  #e92929;
+    border-radius: 0.25rem;
+    color: #e92929;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+#saveData {
+    padding: 12px;
+    width: 190px; 
+    font-weight: bolder;
+    border: none;
+    color: white;
+    background: #6baff0;
+    border-radius: 0.25rem;
+    cursor: pointer;
+
+}
+
+#saveData:hover{
+    background: #6bbbf0
+}
+
+@media (min-width: 800px){
+    #balance {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+    }
+}
+

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevFinance</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1 id="logo">dev<p>.</p>finance<p>$</p>
+        </h1>
+    </header>
+    <main id="container">
+        <section id="balance">
+            <!-- <h2>Balanco</h2> -->
+
+            <div class="card">
+                <h3>
+                    <spam>
+                        Entradas
+                    </spam>
+                    <img src="./assets/income.svg" alt="">
+                </h3>
+                <p id="entrada">0,00</p>
+            </div>
+            <div class="card">
+                <h3>
+                    <spam>
+                        Saidas
+                    </spam>
+                    <img src="./assets/expense.svg" alt="">
+                </h3>
+                <p id="saidas">0,00</p>
+            </div>
+            <div class="card total">
+                <h3>
+                    <spam>
+                        Total
+                    </spam>
+                    <img src="./assets/total.svg" alt="">
+                </h3>
+                <p id="total">0,00</p>
+            </div>
+        </section>
+        <section id="transaction">
+            <!-- <h2>Transacoes</h2> -->
+
+            <a onclick="modal.open()" id="operations" href="#">+operacoes</a>
+
+            <table id="data-table">
+                <thead>
+                    <tr>
+                        <th>Descricao</th>
+                        <th>Valor</th>
+                        <th>Data</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>dev.finance$</p>
+    </footer>
+    <div id="modal" class="hidden">
+        <div id="containerImput">
+            <h3>Nova Transacao</h3>
+            <form action=""  onsubmit="Form.submit(event)">
+                <div id="imputData">
+                    <input type="text" placeholder="Descricao" name="description" id="description" />
+                    <input type="number" placeholder="valor" step="0.01" id="amount" name="amount" />
+                    <p>coloque - (negativo) para operacoes negativas e use virgula para casas decimais </p>
+                    <input type="date" id="date" name="date">
+                    <div id="btns">
+                        <button id="cancelData" onclick="modal.close()">Cancelar</button>
+                        <button id="saveData">Salvar</button>
+                    </div>
+            </form>
+        </div>
+    </div>
+    </div>
+    <script src="./spript.js"></script>
+</body>
+
+</html>
